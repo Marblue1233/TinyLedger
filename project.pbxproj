@@ -1,0 +1,33 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		000000000000000000000001 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyLedgerApp.swift; sourceTree = "<group>"; };
+		00000000000000000000000B = { isa = PBXBuildFile; fileRef = 000000000000000000000001; };
+		000000000000000000000002 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00000000000000000000000C = { isa = PBXBuildFile; fileRef = 000000000000000000000002; };
+		000000000000000000000003 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseStore.swift; sourceTree = "<group>"; };
+		00000000000000000000000D = { isa = PBXBuildFile; fileRef = 000000000000000000000003; };
+		000000000000000000000004 = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000005 = { isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00000000000000000000000F = { isa = PBXBuildFile; fileRef = 000000000000000000000005; };
+		000000000000000000000006 = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyLedger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000014 = { isa = PBXGroup; children = (000000000000000000000015, 000000000000000000000016,); sourceTree = "<group>"; };
+		000000000000000000000015 = { isa = PBXGroup; children = (000000000000000000000001, 000000000000000000000002, 000000000000000000000003, 000000000000000000000004, 000000000000000000000005,); path = TinyLedger; sourceTree = "<group>"; };
+		000000000000000000000016 = { isa = PBXGroup; children = (000000000000000000000006,); name = Products; sourceTree = "<group>"; };
+		00000000000000000000001E = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (00000000000000000000000B, 00000000000000000000000C, 00000000000000000000000D,); runOnlyForDeploymentPostprocessing = 0; };
+		00000000000000000000001F = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (00000000000000000000000F,); runOnlyForDeploymentPostprocessing = 0; };
+		000000000000000000000020 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		000000000000000000000028 = { isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000033; buildPhases = (00000000000000000000001E, 000000000000000000000020, 00000000000000000000001F,); buildRules = (); dependencies = (); name = TinyLedger; productName = TinyLedger; productReference = 000000000000000000000006; productType = "com.apple.product-type.application"; };
+		000000000000000000000029 = { isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = YES; LastSwiftUpdateCheck = 1500; LastUpgradeCheck = 1500; TargetAttributes = { 000000000000000000000028 = { CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = 000000000000000000000032; compatibilityVersion = "Xcode 14.0"; developmentRegion = zh_CN; hasScannedForEncodings = 0; knownRegions = (zh_CN, en, Base,); mainGroup = 000000000000000000000014; productRefGroup = 000000000000000000000016; projectDirPath = ""; projectRoot = ""; targets = (000000000000000000000028,); };
+		000000000000000000000032 = { isa = XCConfigurationList; buildConfigurations = (00000000000000000000003C, 00000000000000000000003D,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		000000000000000000000033 = { isa = XCConfigurationList; buildConfigurations = (00000000000000000000003E, 00000000000000000000003F,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		00000000000000000000003C = { isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; CLANG_WARN_DOCUMENTATION_COMMENTS = YES; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_TESTABILITY = YES; GCC_OPTIMIZATION_LEVEL = 0; GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)",); ONLY_ACTIVE_ARCH = YES; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; name = Debug; };
+		00000000000000000000003D = { isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; CLANG_WARN_DOCUMENTATION_COMMENTS = YES; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; VALIDATE_PRODUCT = YES; }; name = Release; };
+		00000000000000000000003E = { isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = TinyLedger/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 16.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks",); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.course.TinyLedger; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; }; name = Debug; };
+		00000000000000000000003F = { isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = TinyLedger/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 16.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks",); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.course.TinyLedger; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; }; name = Release; };
+	};
+	rootObject = 000000000000000000000029;
+}
